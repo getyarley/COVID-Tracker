@@ -17,7 +17,6 @@ final class CaseStore: ObservableObject {
     @Published var searchCriteria: DataCriteria = .positiveIncrease
     
     //Data vars
-//    @Published var currentCases: COVIDResults?
     @Published var dailyCases: [COVIDResults] = [COVIDResults](repeating: COVIDResults.emptyCases, count: 250)
     @Published var rawData = [Double](repeating: 0, count: 300)
     @Published var lastUpdated: String = ""
@@ -66,11 +65,7 @@ final class CaseStore: ObservableObject {
                 return
             }
             
-//            if self.region == .states, self.dataFrequency == .current {
-//                self.parseCurrentStateJSON(loadedData)
-//            } else {
-                self.parseJSONData(loadedData)
-//            }
+            self.parseJSONData(loadedData)
         }
     }
     
@@ -81,21 +76,12 @@ final class CaseStore: ObservableObject {
         do {
             let loadedData = try decoder.decode([COVIDResults].self, from: data)
                         
-//            if dataFrequency == .daily {
-                DispatchQueue.main.async {
-                    self.dailyCases = loadedData
-                    self.lastUpdated = COVIDResults.dateConverter(from: loadedData.first?.dateChecked)
-                    self.monthScale = MonthScale.getMonthScale(firstMonth: self.dailyCases[self.dailyCases.count - 1].date, lastMonth: self.dailyCases[0].date)
-                    self.transferValues()
-                }
-//            } else {
-//                DispatchQueue.main.async {
-//                    self.currentCases = loadedData[0]
-//                    //MARK: Update lastUpdated value
-//                    self.loading = false
-//                }
-//            }
-            
+            DispatchQueue.main.async {
+                self.dailyCases = loadedData
+                self.lastUpdated = COVIDResults.dateConverter(from: loadedData.first?.dateChecked)
+                self.monthScale = MonthScale.getMonthScale(firstMonth: self.dailyCases[self.dailyCases.count - 1].date, lastMonth: self.dailyCases[0].date)
+                self.transferValues()
+            }
         } catch {
             print("ERROR: Failure to decode JSON data")
         }
@@ -146,22 +132,5 @@ final class CaseStore: ObservableObject {
         self.geometryScalar = (rawData.max() ?? 1000.0) / Double(self.caseScale.scale.last ?? 1000)
         self.loading = false
     }
-    
-    
-    
-//    func parseCurrentStateJSON(_ data: Data) { //API data for current state data isn't in an array
-//        let decoder = JSONDecoder()
-//
-//        do {
-//            let loadedData = try decoder.decode(COVIDResults.self, from: data)
-//
-//            DispatchQueue.main.async {
-//                self.currentCases = loadedData
-//            }
-//        } catch {
-//            print("ERROR: Failure to decide Current State JSON data")
-//        }
-//    }
-    
 }
 

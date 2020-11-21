@@ -17,41 +17,35 @@ struct MainPageView: View {
     @State var searchCriteria: DataCriteria = .positiveIncrease
     
     @State var rotateReloadButton: Bool = false
+    @State var showInfoSheet: Bool = false
+    
     
     var body: some View {
         ScrollView{
             VStack(alignment: .leading) {
                 VStack(alignment: .leading) {
-//                    if dataFrequency == .daily {
-                        HStack(alignment: .top) {
-                            Text((caseStore.region == .us) ? "United States" : Constants.states[caseStore.state.rawValue] ?? "")
-                                .font(.largeTitle)
-                            
-                            Spacer()
-                            
+                    HStack(alignment: .top) {
+                        Text((caseStore.region == .us) ? "United States" : Constants.states[caseStore.state.rawValue] ?? "")
+                            .font(.largeTitle)
+                        
+                        Spacer()
+                        
+                        Button(action: {self.showInfoSheet.toggle()}) {
                             Image(systemName: "info.circle")
                                 .resizable()
                                 .frame(width: 20, height: 20)
-                        } //HSTACK
-                        
-                        Text(Constants.dataCriteria[caseStore.searchCriteria.rawValue] ?? "")
-                            .font(.headline)
-                            .padding(.bottom)
-                        
-                        PlotView(frequency: self.$dataFrequency, dailyData: self.$caseStore.dailyCases, criteria: self.$searchCriteria)
-                            .environmentObject(self.caseStore)
-                            .frame(height: 300)
-                            .blur(radius: self.caseStore.loading ? 5 : 0)
-                        
-            
-//                    } else {
-//                        Text("COVID cases today in the US: \(caseStore.currentCases?.positiveIncrease ?? 0)")
-//                            .font(.title)
-//
-//                        Circle().frame(height: 400)
-//
-//
-//                    } //IF
+                        }
+                        .foregroundColor(Color.divider)
+                    } //HSTACK
+                    
+                    Text(Constants.dataCriteria[caseStore.searchCriteria.rawValue] ?? "")
+                        .font(.headline)
+                        .padding(.bottom)
+                    
+                    PlotView(frequency: self.$dataFrequency, dailyData: self.$caseStore.dailyCases, criteria: self.$searchCriteria)
+                        .environmentObject(self.caseStore)
+                        .frame(height: 300)
+                        .blur(radius: self.caseStore.loading ? 5 : 0)
                 } //VSTACK
                 .padding()
                 
@@ -90,7 +84,9 @@ struct MainPageView: View {
                 Spacer()
             } //VSTACK
         } //SCROLLVIEW
-
+        .sheet(isPresented: self.$showInfoSheet) {
+            InformationView(closeView: self.closeInfoSheet)
+        }
     }
 }
 
@@ -108,6 +104,11 @@ extension MainPageView {
             self.searchCriteria = caseStore.searchCriteria
             caseStore.loadJSONData()
         }
+    }
+    
+    
+    func closeInfoSheet() {
+        self.showInfoSheet = false
     }
     
 }

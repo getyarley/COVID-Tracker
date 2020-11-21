@@ -97,7 +97,6 @@ struct PlotView: View {
 extension PlotView {
     
     var showingZero: Bool {
-//        if showingData.max() == 0 {
         if caseStore.rawData.max() == 0 {
             return true
         } else {

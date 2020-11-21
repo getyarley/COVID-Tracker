@@ -12,7 +12,6 @@ class CachedOptions: NSObject, NSCoding {
     
     var region: String
     var state: String
-//    var dataFrequency: String
     var searchCriteria: String
     
     

@@ -24,36 +24,45 @@ struct CurrentDataRow: View {
             ScrollView(.horizontal) {
                 HStack(spacing: 20) {
                     VStack {
-                        Text("\(currentData.positiveIncrease ?? 0)")
+                        Text("\(checkForEmpty(data: currentData.positiveIncrease))")
                             .font(.title)
+                        
                         Text("Positive")
                             .font(.callout)
                     } //VSTACK
                     
+                    
                     VStack {
-                        Text("\(currentData.deathIncrease ?? 0)")
+                        Text("\(checkForEmpty(data: currentData.deathIncrease))")
                             .font(.title)
+                        
                         Text("Deaths")
                             .font(.callout)
                     } //VSTACK
                     
+                    
                     VStack {
-                        Text("\(currentData.negativeIncrease ?? 0)")
+                        Text("\(checkForEmpty(data: currentData.negativeIncrease))")
                             .font(.title)
+                        
                         Text("Negative")
                             .font(.callout)
                     } //VSTACK
                     
+                    
                     VStack {
-                        Text("\(currentData.death ?? 0)")
+                        Text("\(checkForEmpty(data: currentData.death))")
                             .font(.title)
+                        
                         Text("Total Deaths")
                             .font(.callout)
                     } //VSTACK
                     
+                    
                     VStack {
-                        Text("\(currentData.hospitalizedIncrease ?? 0)")
+                        Text("\(checkForEmpty(data: currentData.hospitalizedIncrease))")
                             .font(.title)
+                        
                         Text("Hospitalizations")
                             .font(.callout)
                     } //VSTACK
@@ -64,6 +73,18 @@ struct CurrentDataRow: View {
             } //SCROLLVIEW
         } //VSTACK
     }
+}
+
+
+extension CurrentDataRow {
+    
+    func checkForEmpty(data: Int?) -> NSObject {
+        guard let value = data, value != 0 else {
+            return "..." as NSObject
+        }
+        return value as NSObject
+    }
+    
 }
 
 struct CurrentDataRow_Previews: PreviewProvider {
