@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import WidgetKit
 
 final class CaseStore: ObservableObject {
     
@@ -33,10 +34,15 @@ final class CaseStore: ObservableObject {
     
     
     func loadUserDefaults() {
-        let defaults = UserDefaults.standard
+        guard let defaults = UserDefaults(suiteName: Constants.userDefaultsIdentifier) else {
+            print("Defaults not found on load")
+            return
+        }
+        NSKeyedUnarchiver.setClass(CachedOptions.self, forClassName: "CachedOptions")
 
         if let cachedOptions = defaults.object(forKey: CachedOptions.cachedOptionsKey) as? Data {
-            if let decodedOptions = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(cachedOptions) as? CachedOptions {
+            if let decodedOptions = try?
+                NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(cachedOptions) as? CachedOptions {
                 self.region = Region(rawValue: decodedOptions.region) ?? .us
                 self.state = SelectedState(rawValue: decodedOptions.state) ?? .ny
                 self.searchCriteria = DataCriteria(rawValue: decodedOptions.searchCriteria) ?? .positive
@@ -47,10 +53,17 @@ final class CaseStore: ObservableObject {
     
     
     func saveOptions() {
+        NSKeyedArchiver.setClassName("CachedOptions", for: CachedOptions.self)
+        
         let currentOptions = CachedOptions(region: self.region.rawValue, state: self.state.rawValue, searchCriteria: self.searchCriteria.rawValue)
         if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: currentOptions, requiringSecureCoding: false) {
-            let defaults = UserDefaults.standard
+            guard let defaults = UserDefaults(suiteName: Constants.userDefaultsIdentifier) else {
+                print("Defaults not found on save")
+                return
+            }
+            
             defaults.set(savedData, forKey: CachedOptions.cachedOptionsKey)
+            WidgetCenter.shared.reloadAllTimelines()
         }
     }
     

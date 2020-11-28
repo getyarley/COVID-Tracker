@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5508666B256FD64E00FD61AA /* WidgetPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A3DEF256DE31D00BFC6AE /* WidgetPlotView.swift */; };
+		5508666F256FD66D00FD61AA /* WidgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5508666E256FD66D00FD61AA /* WidgetManager.swift */; };
+		55086673256FDA1900FD61AA /* PlotDataPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55086672256FDA1900FD61AA /* PlotDataPackage.swift */; };
+		55086674256FDA1900FD61AA /* PlotDataPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55086672256FDA1900FD61AA /* PlotDataPackage.swift */; };
+		550866782570082D00FD61AA /* UserOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550866772570082D00FD61AA /* UserOptions.swift */; };
+		550866792570082D00FD61AA /* UserOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550866772570082D00FD61AA /* UserOptions.swift */; };
+		550A3DDA256DDA1800BFC6AE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550A3DD9256DDA1800BFC6AE /* WidgetKit.framework */; };
+		550A3DDC256DDA1800BFC6AE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550A3DDB256DDA1800BFC6AE /* SwiftUI.framework */; };
+		550A3DDF256DDA1800BFC6AE /* COVID_Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A3DDE256DDA1800BFC6AE /* COVID_Chart.swift */; };
+		550A3DE2256DDA1900BFC6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550A3DE1256DDA1900BFC6AE /* Assets.xcassets */; };
+		550A3DE4256DDA1900BFC6AE /* COVID_Chart.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 550A3DE0256DDA1800BFC6AE /* COVID_Chart.intentdefinition */; };
+		550A3DE5256DDA1900BFC6AE /* COVID_Chart.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 550A3DE0256DDA1800BFC6AE /* COVID_Chart.intentdefinition */; };
+		550A3DE8256DDA1900BFC6AE /* COVID ChartExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 550A3DD7256DDA1800BFC6AE /* COVID ChartExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		550A3DF0256DE31D00BFC6AE /* WidgetPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550A3DEF256DE31D00BFC6AE /* WidgetPlotView.swift */; };
 		5525BD36256345640030DC27 /* ReloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5525BD35256345640030DC27 /* ReloadButton.swift */; };
 		5525BD3D256355510030DC27 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5525BD3C256355510030DC27 /* LoadingIndicator.swift */; };
 		5525BD41256357330030DC27 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5525BD40256357330030DC27 /* LoadingView.swift */; };
@@ -15,6 +29,18 @@
 		555F11A02560CAF600B43812 /* SelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F119F2560CAF600B43812 /* SelectionButton.swift */; };
 		555F11A32560CD3200B43812 /* LocationSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F11A22560CD3200B43812 /* LocationSelectionRow.swift */; };
 		555F11A62560D2B800B43812 /* CriteriaSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555F11A52560D2B800B43812 /* CriteriaSelectionRow.swift */; };
+		556784DB256F51EC00EE064E /* COVIDResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A34012255A2D18007A0736 /* COVIDResults.swift */; };
+		556784DE256F51F300EE064E /* CachedOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9BC7F25672C1A0056E519 /* CachedOptions.swift */; };
+		556784E1256F51F600EE064E /* CaseScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CCDA3525606966002D7E91 /* CaseScale.swift */; };
+		556784E4256F51F800EE064E /* MonthScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2C1872561A3B500BD73E0 /* MonthScale.swift */; };
+		556784E7256F520200EE064E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558C4DDA255CB5D8005D2DD6 /* Constants.swift */; };
+		556784EA256F522600EE064E /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A3400A255A29C4007A0736 /* Categories.swift */; };
+		556784ED256F522B00EE064E /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A34007255A2303007A0736 /* DataLoader.swift */; };
+		556784F0256F523000EE064E /* DigitsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2C1832561A09900BD73E0 /* DigitsExtensions.swift */; };
+		556784F3256F525A00EE064E /* CapsuleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC7F88255E080300318029 /* CapsuleObject.swift */; };
+		556784F6256F525D00EE064E /* PlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC7F82255E07CF00318029 /* PlotView.swift */; };
+		556784F9256F528E00EE064E /* CaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2561E255B6D02009F02B1 /* CaseStore.swift */; };
+		556784FC256F529D00EE064E /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5556AFFC256193D70099EF3E /* CustomColors.swift */; };
 		5569C6B3256948D200621D78 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569C6B2256948D200621D78 /* ViewModifiers.swift */; };
 		558C4DDB255CB5D8005D2DD6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558C4DDA255CB5D8005D2DD6 /* Constants.swift */; };
 		55A33FEF255A22A5007A0736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A33FEE255A22A5007A0736 /* AppDelegate.swift */; };
@@ -37,7 +63,44 @@
 		55DC7F89255E080300318029 /* CapsuleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DC7F88255E080300318029 /* CapsuleObject.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		550A3DE6256DDA1900BFC6AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A33FE3255A22A5007A0736 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 550A3DD6256DDA1800BFC6AE;
+			remoteInfo = "COVID ChartExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		550A3DE9256DDA1900BFC6AE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				550A3DE8256DDA1900BFC6AE /* COVID ChartExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5508666E256FD66D00FD61AA /* WidgetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetManager.swift; sourceTree = "<group>"; };
+		55086672256FDA1900FD61AA /* PlotDataPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotDataPackage.swift; sourceTree = "<group>"; };
+		550866772570082D00FD61AA /* UserOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOptions.swift; sourceTree = "<group>"; };
+		5508667C25700A2E00FD61AA /* COVID-Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "COVID-Tracker.entitlements"; sourceTree = "<group>"; };
+		5508667D25700A4C00FD61AA /* COVID ChartExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "COVID ChartExtension.entitlements"; sourceTree = "<group>"; };
+		550A3DD7256DDA1800BFC6AE /* COVID ChartExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "COVID ChartExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		550A3DD9256DDA1800BFC6AE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		550A3DDB256DDA1800BFC6AE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		550A3DDE256DDA1800BFC6AE /* COVID_Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = COVID_Chart.swift; sourceTree = "<group>"; };
+		550A3DE0256DDA1800BFC6AE /* COVID_Chart.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = COVID_Chart.intentdefinition; sourceTree = "<group>"; };
+		550A3DE1256DDA1900BFC6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		550A3DE3256DDA1900BFC6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		550A3DEF256DE31D00BFC6AE /* WidgetPlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetPlotView.swift; sourceTree = "<group>"; };
 		5525BD35256345640030DC27 /* ReloadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadButton.swift; sourceTree = "<group>"; };
 		5525BD3C256355510030DC27 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		5525BD40256357330030DC27 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -71,6 +134,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		550A3DD4256DDA1800BFC6AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550A3DDC256DDA1800BFC6AE /* SwiftUI.framework in Frameworks */,
+				550A3DDA256DDA1800BFC6AE /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55A33FE8255A22A5007A0736 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,6 +153,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		550A3DD8256DDA1800BFC6AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				550A3DD9256DDA1800BFC6AE /* WidgetKit.framework */,
+				550A3DDB256DDA1800BFC6AE /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		550A3DDD256DDA1800BFC6AE /* COVID Chart */ = {
+			isa = PBXGroup;
+			children = (
+				550A3DDE256DDA1800BFC6AE /* COVID_Chart.swift */,
+				550A3DEF256DE31D00BFC6AE /* WidgetPlotView.swift */,
+				5508666E256FD66D00FD61AA /* WidgetManager.swift */,
+				550A3DE0256DDA1800BFC6AE /* COVID_Chart.intentdefinition */,
+				550A3DE1256DDA1900BFC6AE /* Assets.xcassets */,
+				550A3DE3256DDA1900BFC6AE /* Info.plist */,
+			);
+			path = "COVID Chart";
+			sourceTree = "<group>";
+		};
 		5525BD38256355350030DC27 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +216,10 @@
 		55A33FE2255A22A5007A0736 = {
 			isa = PBXGroup;
 			children = (
+				5508667D25700A4C00FD61AA /* COVID ChartExtension.entitlements */,
 				55A33FED255A22A5007A0736 /* COVID-Tracker */,
+				550A3DDD256DDA1800BFC6AE /* COVID Chart */,
+				550A3DD8256DDA1800BFC6AE /* Frameworks */,
 				55A33FEC255A22A5007A0736 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				55A33FEB255A22A5007A0736 /* COVID-Tracker.app */,
+				550A3DD7256DDA1800BFC6AE /* COVID ChartExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +236,7 @@
 		55A33FED255A22A5007A0736 /* COVID-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				5508667C25700A2E00FD61AA /* COVID-Tracker.entitlements */,
 				55A33FEE255A22A5007A0736 /* AppDelegate.swift */,
 				55A33FF0255A22A5007A0736 /* SceneDelegate.swift */,
 				5556AFFB256193CB0099EF3E /* Support */,
@@ -193,6 +292,8 @@
 				55C9BC7F25672C1A0056E519 /* CachedOptions.swift */,
 				55CCDA3525606966002D7E91 /* CaseScale.swift */,
 				55B2C1872561A3B500BD73E0 /* MonthScale.swift */,
+				55086672256FDA1900FD61AA /* PlotDataPackage.swift */,
+				550866772570082D00FD61AA /* UserOptions.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -200,6 +301,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		550A3DD6256DDA1800BFC6AE /* COVID ChartExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 550A3DEC256DDA1900BFC6AE /* Build configuration list for PBXNativeTarget "COVID ChartExtension" */;
+			buildPhases = (
+				550A3DD3256DDA1800BFC6AE /* Sources */,
+				550A3DD4256DDA1800BFC6AE /* Frameworks */,
+				550A3DD5256DDA1800BFC6AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "COVID ChartExtension";
+			productName = "COVID ChartExtension";
+			productReference = 550A3DD7256DDA1800BFC6AE /* COVID ChartExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		55A33FEA255A22A5007A0736 /* COVID-Tracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55A33FFF255A22A7007A0736 /* Build configuration list for PBXNativeTarget "COVID-Tracker" */;
@@ -207,10 +325,12 @@
 				55A33FE7255A22A5007A0736 /* Sources */,
 				55A33FE8255A22A5007A0736 /* Frameworks */,
 				55A33FE9255A22A5007A0736 /* Resources */,
+				550A3DE9256DDA1900BFC6AE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				550A3DE7256DDA1900BFC6AE /* PBXTargetDependency */,
 			);
 			name = "COVID-Tracker";
 			productName = "COVID-Tracker";
@@ -223,9 +343,12 @@
 		55A33FE3255A22A5007A0736 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					550A3DD6256DDA1800BFC6AE = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					55A33FEA255A22A5007A0736 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -245,11 +368,20 @@
 			projectRoot = "";
 			targets = (
 				55A33FEA255A22A5007A0736 /* COVID-Tracker */,
+				550A3DD6256DDA1800BFC6AE /* COVID ChartExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		550A3DD5256DDA1800BFC6AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				550A3DE2256DDA1900BFC6AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55A33FE9255A22A5007A0736 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +395,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		550A3DD3256DDA1800BFC6AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556784DB256F51EC00EE064E /* COVIDResults.swift in Sources */,
+				556784F3256F525A00EE064E /* CapsuleObject.swift in Sources */,
+				556784FC256F529D00EE064E /* CustomColors.swift in Sources */,
+				556784EA256F522600EE064E /* Categories.swift in Sources */,
+				556784E4256F51F800EE064E /* MonthScale.swift in Sources */,
+				550866792570082D00FD61AA /* UserOptions.swift in Sources */,
+				556784F9256F528E00EE064E /* CaseStore.swift in Sources */,
+				556784E1256F51F600EE064E /* CaseScale.swift in Sources */,
+				550A3DDF256DDA1800BFC6AE /* COVID_Chart.swift in Sources */,
+				556784E7256F520200EE064E /* Constants.swift in Sources */,
+				556784F6256F525D00EE064E /* PlotView.swift in Sources */,
+				556784DE256F51F300EE064E /* CachedOptions.swift in Sources */,
+				556784F0256F523000EE064E /* DigitsExtensions.swift in Sources */,
+				5508666B256FD64E00FD61AA /* WidgetPlotView.swift in Sources */,
+				5508666F256FD66D00FD61AA /* WidgetManager.swift in Sources */,
+				550A3DE4256DDA1900BFC6AE /* COVID_Chart.intentdefinition in Sources */,
+				556784ED256F522B00EE064E /* DataLoader.swift in Sources */,
+				55086674256FDA1900FD61AA /* PlotDataPackage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55A33FE7255A22A5007A0736 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,7 +430,10 @@
 				5525BD4425635BFB0030DC27 /* CurrentDataRow.swift in Sources */,
 				55B2561F255B6D02009F02B1 /* CaseStore.swift in Sources */,
 				555F11A02560CAF600B43812 /* SelectionButton.swift in Sources */,
+				550866782570082D00FD61AA /* UserOptions.swift in Sources */,
+				550A3DF0256DE31D00BFC6AE /* WidgetPlotView.swift in Sources */,
 				55DC7F83255E07CF00318029 /* PlotView.swift in Sources */,
+				550A3DE5256DDA1900BFC6AE /* COVID_Chart.intentdefinition in Sources */,
 				5525BD36256345640030DC27 /* ReloadButton.swift in Sources */,
 				55C9BC832567574B0056E519 /* InformationView.swift in Sources */,
 				55B2C1842561A09900BD73E0 /* DigitsExtensions.swift in Sources */,
@@ -286,6 +446,7 @@
 				5525BD41256357330030DC27 /* LoadingView.swift in Sources */,
 				55A34013255A2D18007A0736 /* COVIDResults.swift in Sources */,
 				55A3400B255A29C4007A0736 /* Categories.swift in Sources */,
+				55086673256FDA1900FD61AA /* PlotDataPackage.swift in Sources */,
 				5569C6B3256948D200621D78 /* ViewModifiers.swift in Sources */,
 				55A33FF1255A22A5007A0736 /* SceneDelegate.swift in Sources */,
 				55DC7F89255E080300318029 /* CapsuleObject.swift in Sources */,
@@ -296,6 +457,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		550A3DE7256DDA1900BFC6AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 550A3DD6256DDA1800BFC6AE /* COVID ChartExtension */;
+			targetProxy = 550A3DE6256DDA1900BFC6AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		55A33FF9255A22A7007A0736 /* LaunchScreen.storyboard */ = {
@@ -309,6 +478,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		550A3DEA256DDA1900BFC6AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "COVID ChartExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5W8BWK25N;
+				INFOPLIST_FILE = "COVID Chart/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jyarley.COVID-Tracker.COVID-Chart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		550A3DEB256DDA1900BFC6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "COVID ChartExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z5W8BWK25N;
+				INFOPLIST_FILE = "COVID Chart/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jyarley.COVID-Tracker.COVID-Chart";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		55A33FFD255A22A7007A0736 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -428,8 +643,10 @@
 		55A34000255A22A7007A0736 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "COVID-Tracker/COVID-Tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"COVID-Tracker/Preview Content\"";
 				DEVELOPMENT_TEAM = Z5W8BWK25N;
@@ -449,8 +666,10 @@
 		55A34001255A22A7007A0736 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "COVID-Tracker/COVID-Tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"COVID-Tracker/Preview Content\"";
 				DEVELOPMENT_TEAM = Z5W8BWK25N;
@@ -470,6 +689,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		550A3DEC256DDA1900BFC6AE /* Build configuration list for PBXNativeTarget "COVID ChartExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				550A3DEA256DDA1900BFC6AE /* Debug */,
+				550A3DEB256DDA1900BFC6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		55A33FE6255A22A5007A0736 /* Build configuration list for PBXProject "COVID-Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

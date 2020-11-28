@@ -21,7 +21,17 @@ struct CaseScale {
     static func getCaseScale(maxValue: Double) -> CaseScale {
         var scale = CaseScale(scale:[])
         
-        if maxValue < 2000 {
+        if maxValue > 18000 {
+            let multiplier = Int(maxValue / 5000)
+            let maxScaleValue = (multiplier + 1) * 5000
+            
+            scale.scale.append(0)
+            scale.scale.append(maxScaleValue/4)
+            scale.scale.append(maxScaleValue/2)
+            scale.scale.append(maxScaleValue*3/4)
+            scale.scale.append(maxScaleValue)
+            return scale
+        } else if maxValue < 2000 {
             var multiplier = 1
             while multiplier * 100 <= Int(maxValue) {
                 multiplier += 1

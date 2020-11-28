@@ -9,6 +9,8 @@ import Foundation
 
 struct Constants {
     
+    static var userDefaultsIdentifier = "group.jyarley.COVID-Tracker"
+    
     static var region = [
         "states": "States",
         "us": "United States"
