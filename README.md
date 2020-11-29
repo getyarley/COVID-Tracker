@@ -1,4 +1,4 @@
-# COVID-Tracker
+# COVID Chart
 
 > Keep track of the most recent COVID-19 statistics for the United States. Data is collected via fetching JSON from The COVID Tracking Project and plotted over time in a simple format. A medium and large homescreen Widget is included.
 
